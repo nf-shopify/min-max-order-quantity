@@ -1,0 +1,23 @@
+query RunInput {
+  cart {
+    lines {
+      quantity
+      merchandise {
+        ... on ProductVariant {
+          id
+          title
+          maxorderquantity: metafield(namespace: "custom", key: "max_order_quantity") {
+            value
+          }
+          minorderquantity: metafield(namespace: "custom", key: "min_order_quantity") {
+            value
+          }
+          product {
+            id
+            title
+          }
+        }
+      }
+    }
+  }
+}

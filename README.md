@@ -4,23 +4,6 @@ This is a template for building a Checkout Validation Function which enforces a 
 
 It contains the basics for building a Shopify app that uses only app extensions. (https://shopify.dev/docs/apps/getting-started)
 
-
-## Clone the project
-```
-git clone https://github.com/nf-shopify/pythonShopifyGraphql
-```
-
-
-**If you plan for your app to load its own page in the Shopify Admin, then you'll want to choose one of our other templates.**
-
-Whether you choose to use this template or another one, you can use your preferred package manager and the Shopify CLI with [these steps](#installing-the-template).
-
-## Benefits
-
-Shopify apps are built on a variety of Shopify tools to create a great merchant experience. The [create an app](https://shopify.dev/docs/apps/getting-started/create) tutorial in our developer documentation will guide you through creating a Shopify app.
-
-This app template does little more than install the CLI and scaffold a respository.
-
 ## Getting started
 
 ### Requirements
@@ -29,30 +12,10 @@ This app template does little more than install the CLI and scaffold a resposito
 1. You must [create a Shopify partner account](https://partners.shopify.com/signup) if you don’t have one.
 1. You must create a store for testing if you don't have one, either a [development store](https://help.shopify.com/en/partners/dashboard/development-stores#create-a-development-store) or a [Shopify Plus sandbox store](https://help.shopify.com/en/partners/dashboard/managing-stores/plus-sandbox-store).
 
-### Installing the template
-
-This template can be installed using your preferred package manager:
-
-Using yarn:
-
-```shell
-yarn create @shopify/app
+### Clone the project
 ```
-
-Using npm:
-
-```shell
-npm init @shopify/app@latest
+git clone https://github.com/nf-shopify/pythonShopifyGraphql
 ```
-
-Using pnpm:
-
-```shell
-pnpm create @shopify/app@latest
-```
-
-This will clone the template and install the required dependencies.
-
 #### Local Development
 
 [The Shopify CLI](https://shopify.dev/docs/apps/tools/cli) connects to an app in your Partners dashboard. It provides environment variables and runs commands in parallel..
@@ -77,7 +40,8 @@ Using pnpm:
 pnpm run dev
 ```
 
-Open the URL generated in your console. Once you grant permission to the app, you can start development (such as generating extensions).
+Open the URL generated in your console. Once you grant permission to the app, you can start to to test the function in your store.
+
 
 ## Developer resources
 

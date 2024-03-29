@@ -1,6 +1,13 @@
-# Shopify App Template - None (app with extensions only)
+# Shopify App Template - Min/Max Checkout Validation Function (app with extensions only)
 
-This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) that includes no app home UI. It contains the basics for building a Shopify app that uses only app extensions.
+This is a template for building a Checkout Validation Function which enforces a minimum and maximum order quantity at the variant level (https://shopify.dev/docs/apps/getting-started) that includes no app home UI. It contains the basics for building a Shopify app that uses only app extensions.
+
+
+## Clone the project
+```
+git clone https://github.com/nf-shopify/pythonShopifyGraphql
+```
+
 
 **If you plan for your app to load its own page in the Shopify Admin, then you'll want to choose one of our other templates.**
 
@@ -76,3 +83,5 @@ Open the URL generated in your console. Once you grant permission to the app, yo
 - [App authentication](https://shopify.dev/docs/apps/auth)
 - [Shopify CLI](https://shopify.dev/docs/apps/tools/cli)
 - [Shopify API Library documentation](https://github.com/Shopify/shopify-api-js#readme)
+
+

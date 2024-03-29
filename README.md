@@ -16,7 +16,7 @@ It contains the basics for building a Shopify app that uses only app extensions.
 ```
 git clone https://github.com/nf-shopify/pythonShopifyGraphql
 ```
-#### Local Development
+### Local Development
 
 [The Shopify CLI](https://shopify.dev/docs/apps/tools/cli) connects to an app in your Partners dashboard. It provides environment variables and runs commands in parallel..
 

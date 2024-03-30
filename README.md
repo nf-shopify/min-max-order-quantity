@@ -14,30 +14,26 @@ It contains the basics for building a Shopify app that uses only app extensions.
 
 ### Clone the project
 ```
-git clone https://github.com/nf-shopify/pythonShopifyGraphql
+git clone https://github.com/nf-shopify/min-max-order-quantity.git
 ```
+
+You can find function within /extensions/min-max-function
+
+### Prerequisites
+
+1. Creation of a integer metafield on the varirant object to contain minimum quantity (namespace: "custom", key: "max_order_quantity)
+1. Creation of a integer metafield on the varirant object to contain maximum quantity (namespace: "custom", key: "max_order_quantity)
+
 ### Local Development
 
 [The Shopify CLI](https://shopify.dev/docs/apps/tools/cli) connects to an app in your Partners dashboard. It provides environment variables and runs commands in parallel..
 
 You can develop locally using your preferred package manager. Run one of the following commands from the root of your app.
 
-Using yarn:
-
-```shell
-yarn dev
-```
-
 Using npm:
 
 ```shell
 npm run dev
-```
-
-Using pnpm:
-
-```shell
-pnpm run dev
 ```
 
 Open the URL generated in your console. Once you grant permission to the app, you can start to to test the function in your store.

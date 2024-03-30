@@ -31,7 +31,7 @@ export function run(input) {
       maxOrderQuantity
     );
 
-    // Check max quantity for each line item
+    // Comapre cart quantity to max and min order quantity
     if (quantity > maxOrderQuantity) {
       errors.push({
         localizedMessage: `Sorry, the maximum order quantity for ${merchandise?.product?.title} / ${merchandise?.title} is ${maxOrderQuantity}`,

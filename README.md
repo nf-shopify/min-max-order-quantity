@@ -21,8 +21,8 @@ You can find function within /extensions/min-max-function
 
 ### Prerequisites
 
-1. Creation of a integer metafield on the varirant object to contain minimum quantity - namespace: "custom", key: "max_order_quantity
-1. Creation of a integer metafield on the varirant object to contain maximum quantity - namespace: "custom", key: "max_order_quantity
+1. Creation of a integer metafield on the varirant object to contain minimum quantity - namespace: "custom", key: "min_order_quantity"
+1. Creation of a integer metafield on the varirant object to contain maximum quantity - namespace: "custom", key: "max_order_quantity"
 
 ### Local Development
 

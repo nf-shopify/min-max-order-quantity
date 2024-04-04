@@ -2,7 +2,7 @@
 
 client_id = "4d5d9e535ac1d406aa7ccd0633ef04dd"
 name = "min-max-order-quantity"
-handle = "min-max-order-quantity"
+handle = "min-max-order-quantity-sa"
 application_url = "https://shopify.dev/apps/default-app-home"
 embedded = true
 

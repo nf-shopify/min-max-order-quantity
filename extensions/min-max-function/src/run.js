@@ -12,7 +12,7 @@
 
 export function run(input) {
   const { lines } = input.cart;
-  const errors = lines.reduce((acc, lineItem) => {
+  const errors = lines.reduce((minMaxError, lineItem) => {
     const { quantity, merchandise } = lineItem;
     const maxOrderQuantity = Number.parseInt(merchandise?.maxorderquantity?.value);
     const minOrderQuantity = Number.parseInt(merchandise?.minorderquantity?.value);
@@ -22,17 +22,17 @@ export function run(input) {
 
     // Compare cart quantity to max and min order quantity
     if (quantity > maxOrderQuantity) {
-      acc.push({
+      minMaxError.push({
         localizedMessage: `Sorry, the maximum order quantity for ${merchandise?.product?.title} / ${merchandise?.title} is ${maxOrderQuantity}`,
         target: "cart",
       });
     } else if (quantity < minOrderQuantity) {
-      acc.push({
+      minMaxError.push({
         localizedMessage: `Sorry, the minimum order quantity for ${merchandise?.product?.title} / ${merchandise?.title} is ${minOrderQuantity}`,
         target: "cart",
       });
     }
-    return acc;
+    return minMaxError;
   }, []);
 
   return { errors };

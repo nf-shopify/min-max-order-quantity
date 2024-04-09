@@ -14,11 +14,25 @@ export function run(input) {
   const { lines } = input.cart;
   const errors = lines.reduce((minMaxError, lineItem) => {
     const { quantity, merchandise } = lineItem;
-    const maxOrderQuantity = Number.parseInt(merchandise?.maxorderquantity?.value);
-    const minOrderQuantity = Number.parseInt(merchandise?.minorderquantity?.value);
+    const maxOrderQuantity = Number.parseInt(
+      merchandise?.maxorderquantity?.value
+    );
+    const minOrderQuantity = Number.parseInt(
+      merchandise?.minorderquantity?.value
+    );
 
-    console.log("Product Title: ", merchandise?.product?.title, " Variant Title: ",merchandise?.title,
-    " Cart Quantity: ", quantity, " Min Order Quantity:", minOrderQuantity, " Max Order Quantity:", maxOrderQuantity);
+    console.log(
+      "Product Title: ",
+      merchandise?.product?.title,
+      " Variant Title: ",
+      merchandise?.title,
+      " Cart Quantity: ",
+      quantity,
+      " Min Order Quantity:",
+      minOrderQuantity,
+      " Max Order Quantity:",
+      maxOrderQuantity
+    );
 
     // Compare cart quantity to max and min order quantity
     if (quantity > maxOrderQuantity) {
@@ -34,6 +48,5 @@ export function run(input) {
     }
     return minMaxError;
   }, []);
-
   return { errors };
 }

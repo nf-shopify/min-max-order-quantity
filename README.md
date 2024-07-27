@@ -1,4 +1,4 @@
-# Shopify App Template - Min/Max Checkout Validation Function (app with extensions only)
+# Shopify Function Template - Min/Max Checkout Validation Function (app with extensions only)
 
 This is a template for building a Checkout Validation Function which enforces a line item minimum and maximum based on metafeilds on the variant level. This app does not include an app home UI.
 

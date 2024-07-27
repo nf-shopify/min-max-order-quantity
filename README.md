@@ -3,7 +3,9 @@
 
 This is a template for building a Checkout Validation Function which enforces a line item minimum and maximum quantity based on thresholds store in metafields on the variant level. This app does not include an app home UI.
 
-It contains the basics for building a Shopify app that uses only app extensions. (https://shopify.dev/docs/apps/getting-started) (https://shopify.dev/docs/api/functions/reference/cart-checkout-validation) 
+It contains the basics for building a Shopify app that uses only app extensions. 
+(https://shopify.dev/docs/apps/getting-started) 
+(https://shopify.dev/docs/api/functions/reference/cart-checkout-validation) 
 
 ## Getting started
 
